@@ -16,5 +16,11 @@
     "prefix": "st",
     "body": ["<style>", "$1", "</style>"],
     "description": "style"
+  },
+  "template": {
+    "scope": "javascript,,typescript",
+    "prefix": "te",
+    "body": ["<template>", "  $1", "</template>"],
+    "description": "template"
   }
 }
