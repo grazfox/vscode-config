@@ -1,0 +1,14 @@
+{
+  "script setup": {
+    "scope": "javascript,,typescript",
+    "prefix": "ss",
+    "body": ["<script setup>", "$1", "</script>"],
+    "description": "script setup"
+  },
+  "import": {
+    "scope": "javascript,,typescript",
+    "prefix": "im",
+    "body": ["import { $2 } from \"$1\""],
+    "description": "import"
+  }
+}
