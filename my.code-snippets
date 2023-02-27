@@ -5,10 +5,16 @@
     "body": ["<script setup>", "$1", "</script>"],
     "description": "script setup"
   },
-  "import": {
+  "script": {
     "scope": "javascript,,typescript",
-    "prefix": "im",
-    "body": ["import { $2 } from \"$1\""],
-    "description": "import"
+    "prefix": "sc",
+    "body": ["<script>", "$1", "</script>"],
+    "description": "script"
+  },
+  "style": {
+    "scope": "javascript,,typescript",
+    "prefix": "st",
+    "body": ["<style>", "$1", "</style>"],
+    "description": "style"
   }
 }
