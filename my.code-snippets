@@ -104,5 +104,13 @@
     "prefix": "onD",
     "body": ["onDeactivated(() => {", "  $0", "})"],
     "description": "onDeactivated()"
+  },
+  "v-for": {
+    "scope": "html",
+    "prefix": "vFor",
+    "body": [
+      "v-for=\"(${1:item}, ${2:index}) of ${3:arr}\" :key=\"${4:index}\""
+    ],
+    "description": "v-for"
   }
 }
