@@ -1,0 +1,14 @@
+- Atom One Dark Theme
+- Auto Rename Tag
+- Babel JavaScript
+- Chinese (Simplified) (简体中文) Language
+- Docker
+- Element Plus Snippets
+- ES7+ React/Redux/React-Native snippets
+- ESLint
+- JavaScript (ES6) code snippets
+- Material Icon Theme
+- open in browser
+- Prettier - Code formatter
+- TypeScript Vue Plugin (Volar)
+- Vue Language Features (Volar)
