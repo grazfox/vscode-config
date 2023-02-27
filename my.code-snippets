@@ -1,26 +1,108 @@
 {
   "script setup": {
-    "scope": "javascript,,typescript",
+    "scope": "javascript,,typescript,vue",
     "prefix": "ss",
-    "body": ["<script setup>", "$1", "</script>"],
+    "body": ["<script setup>", "$0", "</script>"],
     "description": "script setup"
   },
   "script": {
     "scope": "javascript,,typescript",
     "prefix": "sc",
-    "body": ["<script>", "$1", "</script>"],
+    "body": ["<script>", "$0", "</script>"],
     "description": "script"
   },
   "style": {
     "scope": "javascript,,typescript",
     "prefix": "st",
-    "body": ["<style>", "$1", "</style>"],
+    "body": ["<style>", "$0", "</style>"],
     "description": "style"
   },
   "template": {
     "scope": "javascript,,typescript",
     "prefix": "te",
-    "body": ["<template>", "  $1", "</template>"],
+    "body": ["<template>", "  $0", "</template>"],
     "description": "template"
+  },
+  "reactive": {
+    "scope": "javascript,,typescript",
+    "prefix": "rea",
+    "body": ["const $0 = reactive($1)"],
+    "description": "reactive()"
+  },
+  "ref": {
+    "scope": "javascript,,typescript",
+    "prefix": "ref",
+    "body": ["const $0 = ref($1)"],
+    "description": "ref()"
+  },
+  "computed": {
+    "scope": "javascript,,typescript",
+    "prefix": "compu",
+    "body": ["const $0 = computed(() => {", "  return $1", "})"],
+    "description": "computed()"
+  },
+  "watch": {
+    "scope": "javascript,,typescript",
+    "prefix": "wat",
+    "body": [
+      "watch(${1:value}, (${2:oldValue}, ${3:newValue}) => {",
+      "  $0",
+      "})"
+    ],
+    "description": "watch()"
+  },
+  "onMounted": {
+    "scope": "javascript,,typescript",
+    "prefix": "onM",
+    "body": ["onMounted(() => {", "  $0", "})"],
+    "description": "onMounted()"
+  },
+  "onUpdated": {
+    "scope": "javascript,,typescript",
+    "prefix": "onUp",
+    "body": ["onUpdated(() => {", "  $0", "})"],
+    "description": "onUpdated()"
+  },
+  "onUnmounted": {
+    "scope": "javascript,,typescript",
+    "prefix": "onUnm",
+    "body": ["onUnmounted(() => {", "  $0", "})"],
+    "description": "onUnmounted()"
+  },
+  "onBeforeMount": {
+    "scope": "javascript,,typescript",
+    "prefix": "onBM",
+    "body": ["onBeforeMount(() => {", "  $0", "})"],
+    "description": "onBeforeMount()"
+  },
+  "onBeforeUpdate": {
+    "scope": "javascript,,typescript",
+    "prefix": "onBUp",
+    "body": ["onBeforeUpdate(() => {", "  $0", "})"],
+    "description": "onBeforeUpdate()"
+  },
+  "onBeforeUnmount": {
+    "scope": "javascript,,typescript",
+    "prefix": "onBUnm",
+    "body": ["onBeforeUnmount(() => {", "  $0", "})"],
+    "description": "onBeforeUnmount()"
+  },
+  "onErrorCaptured": {
+    "scope": "javascript,,typescript",
+    "prefix": "onErr",
+    "body": ["onErrorCaptured((error, vm, info) => {", "  $0", "})"],
+    "description": "onErrorCaptured()"
+  },
+  "onActivated": {
+    "scope": "javascript,,typescript",
+    "prefix": "onA",
+    "body": ["onActivated(() => {", "  $0", "})"],
+    "description": "onActivated()"
+  },
+  "onDeactivated": {
+    "scope": "javascript,,typescript",
+    "prefix": "onD",
+    "body": ["onDeactivated(() => {", "  $0", "})"],
+    "description": "onDeactivated()"
   }
 }
